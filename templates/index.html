@@ -1,0 +1,19 @@
+{%  load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'front/index.css' %}">
+</head>
+<body>
+{#    navigating bar#}
+    <nav>
+        <ul class='nav'>
+            <li><a href="/">Front Page</a> </li>
+{#            # where to jump: / root#}
+            <li><a href="{% url 'add_book' %}">Publish Book</a> </li>
+        </ul>
+    </nav>
+</body>
+</html>
